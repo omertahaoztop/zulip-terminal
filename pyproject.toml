@@ -1,7 +1,7 @@
 [tool.black]
 # Default line-length, but use explicit value here since used for isort & ruff
 line-length = 88
-target-version = ['py37']
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311', 'py312', 'py313']
 
 [tool.coverage.run]
 branch = true
@@ -149,7 +149,7 @@ filterwarnings = [
 
 [tool.ruff]
 line-length = 88
-target-version = "py37"
+target-version = "py37"  # Minimum supported version
 exclude = [
     ".git",
     "__pycache__",
